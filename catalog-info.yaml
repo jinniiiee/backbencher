@@ -1,5 +1,5 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: API
 metadata:
   name: "ExploreMe"
   description: "Discover backstage"
@@ -10,5 +10,16 @@ spec:
   type: service
   lifecycle: experimental
   owner: "group:default/guests"
-  providesApis:
-    - api/play/greet
+  definition: |
+    openapi: "3.0.1"
+    info:
+      version: v0.1
+      title: Explore Financing
+      license:
+        name: S x B
+    servers:
+      - url: https://document-service.dev.sebx.se/swagger-ui/index.html
+    paths:
+      /api/play/greet:
+        get:
+          summary: Get a nice greeting

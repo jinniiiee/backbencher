@@ -1,11 +1,15 @@
 apiVersion: backstage.io/v1alpha1
-kind: API
+kind: Component
 metadata:
   name: "ExploreMe"
   description: "Discover backstage"
   annotations:
     github.com/project-slug: jinniiiee/backbencher
     backstage.io/techdocs-ref: dir:.
+  links:
+      url: https://document-service.dev.sebx.se/swagger-ui/index.html
+      title: My Dashboard
+      icon: dashboard
 spec:
   type: service
   lifecycle: experimental
@@ -18,7 +22,7 @@ spec:
       license:
         name: S x B
     servers:
-      - url: https://document-service.dev.sebx.se/swagger-ui/index.html
+      url: https://document-service.dev.sebx.se/swagger-ui/index.html
     paths:
       /api/play/greet:
         get:

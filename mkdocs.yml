@@ -1,0 +1,8 @@
+site_name: "ExploreMe"
+site_description: "Discover backstage"
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core

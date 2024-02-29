@@ -11,4 +11,4 @@ spec:
   lifecycle: experimental
   owner: "group:default/guests"
   providesApis:
-    - /api/play/greet
+    - api/play/greet

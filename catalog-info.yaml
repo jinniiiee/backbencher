@@ -7,9 +7,10 @@ metadata:
     github.com/project-slug: jinniiiee/backbencher
     backstage.io/techdocs-ref: dir:.
   links:
-      url: https://document-service.dev.sebx.se/swagger-ui/index.html
-      title: My Dashboard
-      icon: dashboard
+    - url: https://document-service.dev.sebx.se/swagger-ui/index.html
+      title: Swagger
+      icon: techdocs
+      type: swagger
 spec:
   type: service
   lifecycle: experimental

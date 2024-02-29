@@ -1,4 +1,4 @@
-package com.example.com.seb.embedded;
+package com.poc.seb.embedded;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
